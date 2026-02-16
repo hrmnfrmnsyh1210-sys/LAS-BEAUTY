@@ -27,7 +27,7 @@ const PRODUCTS: Product[] = [
     name: "Siang",
     type: "Day",
     description:
-      "Krim siang dengan perlindungan SPF 70 yang melindungi kulit dari paparan sinar matahari, melembapkan, mencerahkan, dan meratakan warna kulit. Aturan pakai: 1 hari 1x (di siang hari).",
+      "Lotion siang dengan perlindungan SPF 70 yang melindungi kulit dari paparan sinar matahari, melembapkan, mencerahkan, dan meratakan warna kulit. Aturan pakai: 1 hari 1x (di siang hari).",
     volume: "100ml",
     benefits: [
       "Melindungi kulit dari paparan sinar matahari dengan SPF 70",
@@ -91,7 +91,7 @@ const PRODUCTS: Product[] = [
     name: "Malam",
     type: "Night",
     description:
-      "Krim malam yang bekerja saat Anda tidur untuk mencerahkan kulit dan meratakan warna kulit. Aturan pakai: 1 hari 1x (di malam hari).",
+      "Lotion malam yang bekerja saat Anda tidur untuk mencerahkan kulit dan meratakan warna kulit. Aturan pakai: 1 hari 1x (di malam hari).",
     volume: "100ml",
     benefits: [
       "Membantu mencerahkan kulit dan membuat warna kulit tampak lebih merata",
@@ -144,7 +144,7 @@ const PACKAGES: Package[] = [
     id: "pkg-3",
     name: "Paket Fresh",
     description:
-      "Kombinasi toner dan krim siang untuk tampilan segar dan glowing sepanjang hari.",
+      "Kombinasi toner dan lotion siang untuk tampilan segar dan glowing sepanjang hari.",
     price: 240000,
     originalPrice: 270000,
     productIds: ["2", "1"],
@@ -170,8 +170,8 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Krim malamnya bagus banget, teksturnya ringan dan tidak lengket. Bangun tidur kulit terasa lebih halus dan lembap. Suka banget!",
-    product: "Krim Malam",
+      "Lotion malamnya bagus banget, teksturnya ringan dan tidak lengket. Bangun tidur kulit terasa lebih halus dan lembap. Suka banget!",
+    product: "Lotion Malam",
     image: "/images/testi.jpeg",
   },
   {
@@ -190,8 +190,8 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 4,
     comment:
-      "Krim siangnya enak dipakai, tidak bikin wajah berminyak dan ada SPF 70 jadi tidak perlu sunscreen lagi. Kulit jadi lebih terlindungi.",
-    product: "Krim Siang",
+      "Lotion siangnya enak dipakai, tidak bikin wajah berminyak dan ada SPF 70 jadi tidak perlu sunscreen lagi. Kulit jadi lebih terlindungi.",
+    product: "Lotion Siang",
     image: "/images/testi.jpeg",
   },
   {
@@ -444,9 +444,6 @@ const App: React.FC = () => {
             <span className="text-gold-600 uppercase tracking-widest text-xs font-bold mb-2 block">
               Testimoni
             </span>
-            <h3 className="font-serif text-4xl text-stone-900 mb-4">
-              Apa Kata Mereka
-            </h3>
             <p className="text-stone-500 max-w-lg mx-auto">
               Dengarkan pengalaman nyata dari pelanggan setia LAS Brightening
               yang telah merasakan perubahan pada kulit mereka.

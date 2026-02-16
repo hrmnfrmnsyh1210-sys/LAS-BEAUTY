@@ -15,7 +15,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg, products, whatsappNumber
   const handleOrderWhatsApp = () => {
     const productList = includedProducts
       .map(p => {
-        const type = p.type === 'Toner' ? 'Toner' : p.type === 'Day' ? 'Krim Siang' : 'Krim Malam';
+        const type = p.type === 'Toner' ? 'Toner' : p.type === 'Day' ? 'Lotion Siang' : 'Lotion Malam';
         return `- ${type} ${p.name} (${p.volume})`;
       })
       .join('\n');
@@ -60,7 +60,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg, products, whatsappNumber
           <p className="text-xs uppercase tracking-widest text-stone-400 font-semibold mb-3">Isi Paket</p>
           <div className="space-y-2">
             {includedProducts.map(product => {
-              const type = product.type === 'Toner' ? 'Toner' : product.type === 'Day' ? 'Krim Siang' : 'Krim Malam';
+              const type = product.type === 'Toner' ? 'Toner' : product.type === 'Day' ? 'Lotion Siang' : 'Lotion Malam';
               return (
                 <div key={product.id} className="flex items-center gap-3 bg-stone-50 rounded-xl p-2.5">
                   <img src={product.image} alt={product.name} className="w-10 h-10 rounded-lg object-cover" />

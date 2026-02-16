@@ -8,7 +8,7 @@ interface ProductDetailProps {
 }
 
 const ProductDetail: React.FC<ProductDetailProps> = ({ product, onClose }) => {
-  const productType = product.type === 'Toner' ? 'Toner' : product.type === 'Day' ? 'Krim Siang' : 'Krim Malam';
+  const productType = product.type === 'Toner' ? 'Toner' : product.type === 'Day' ? 'Lotion Siang' : 'Lotion Malam';
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">

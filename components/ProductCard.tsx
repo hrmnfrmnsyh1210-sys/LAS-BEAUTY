@@ -8,7 +8,7 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetail }) => {
-  const productType = product.type === 'Toner' ? 'Toner' : product.type === 'Day' ? 'Krim Siang' : 'Krim Malam';
+  const productType = product.type === 'Toner' ? 'Toner' : product.type === 'Day' ? 'Lotion Siang' : 'Lotion Malam';
 
   return (
     <div
