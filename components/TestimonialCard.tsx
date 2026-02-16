@@ -1,24 +1,33 @@
 import React from "react";
 import { Testimonial } from "../types";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ZoomIn } from "lucide-react";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
+  onImageClick?: (image: string) => void;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageClick }) => {
   const initial = testimonial.name.charAt(0).toUpperCase();
 
   return (
     <div className="bg-white rounded-3xl shadow-xl border border-stone-100 flex flex-col hover:shadow-2xl transition-all duration-300 overflow-hidden">
       {/* Foto Hasil Pemakaian */}
       {testimonial.image && (
-        <div className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100">
+        <div
+          className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100 cursor-pointer group"
+          onClick={() => onImageClick?.(testimonial.image!)}
+        >
           <img
             src={testimonial.image}
             alt={`Hasil pemakaian ${testimonial.product} - ${testimonial.name}`}
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm rounded-full p-3 shadow-lg">
+              <ZoomIn className="w-5 h-5 text-stone-700" />
+            </div>
+          </div>
         </div>
       )}
 

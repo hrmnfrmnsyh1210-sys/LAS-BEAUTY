@@ -131,7 +131,7 @@ const PACKAGES: Package[] = [
   },
   {
     id: "pkg-2",
-    name: "Paket Lengkap Glowing",
+    name: "Paket Lengkap",
     description:
       "Paket lengkap 3-in-1 untuk hasil maksimal. Toner + Day Cream + Night Cream untuk rutinitas perawatan kulit menyeluruh.",
     price: 385000,
@@ -142,7 +142,7 @@ const PACKAGES: Package[] = [
   },
   {
     id: "pkg-3",
-    name: "Paket Fresh Glow",
+    name: "Paket Fresh",
     description:
       "Kombinasi toner dan krim siang untuk tampilan segar dan glowing sepanjang hari.",
     price: 240000,
@@ -160,8 +160,8 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Setelah 2 minggu pakai Paket Lengkap Glowing, kulit wajah saya jadi lebih cerah dan glowing. Noda bekas jerawat juga mulai memudar. Sangat recommended!",
-    product: "Paket Lengkap Glowing",
+      "Setelah 2 minggu pakai Paket Lengkap, kulit wajah saya jadi lebih cerah dan glowing. Noda bekas jerawat juga mulai memudar. Sangat recommended!",
+    product: "Paket Lengkap",
     image: "/images/testi.jpeg",
   },
   {
@@ -211,7 +211,7 @@ const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     comment:
       "Produk LAS ini beneran bagus, bahan-bahannya alami dan hasilnya nyata. Udah repurchase 3 kali dan tidak mau ganti skincare lain!",
-    product: "Paket Lengkap Glowing",
+    product: "Paket Lengkap",
     image: "/images/testi.jpeg",
   },
 ];
@@ -220,6 +220,7 @@ const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -257,12 +258,6 @@ const App: React.FC = () => {
           <div className="hidden md:flex items-center gap-8 font-sans text-sm tracking-widest uppercase text-stone-600">
             <a href="#" className="hover:text-gold-600 transition-colors">
               Beranda
-            </a>
-            <a
-              href="#products"
-              className="hover:text-gold-600 transition-colors"
-            >
-              Produk
             </a>
             <a
               href="#packages"
@@ -305,13 +300,6 @@ const App: React.FC = () => {
                 Beranda
               </a>
               <a
-                href="#products"
-                onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-gold-600 transition-colors py-2"
-              >
-                Produk
-              </a>
-              <a
                 href="#packages"
                 onClick={() => setMobileMenuOpen(false)}
                 className="hover:text-gold-600 transition-colors py-2"
@@ -348,8 +336,8 @@ const App: React.FC = () => {
                 </span>
               </div>
               <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight text-stone-900 mb-6">
-                Kulit Cerah & <br />
-                <span className="text-gold-gradient italic pr-2">Glowing</span>
+                Kulit Putih <br />
+                <span className="text-gold-gradient italic pr-2">dan Sehat</span>
               </h2>
               <p className="font-sans text-stone-500 text-lg leading-relaxed max-w-lg mx-auto md:mx-0 mb-10">
                 Rasakan kemewahan LAS Brightening. Formula triple-action kami
@@ -362,12 +350,6 @@ const App: React.FC = () => {
                   className="px-8 py-4 bg-stone-900 text-white rounded-full font-sans uppercase tracking-widest text-sm hover:bg-gold-600 transition-colors shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
                 >
                   Lihat Paket <ArrowRight className="w-4 h-4" />
-                </a>
-                <a
-                  href="#products"
-                  className="px-8 py-4 bg-white border border-stone-200 text-stone-900 rounded-full font-sans uppercase tracking-widest text-sm hover:border-gold-400 transition-colors flex items-center justify-center"
-                >
-                  Detail Produk
                 </a>
               </div>
             </div>
@@ -420,35 +402,6 @@ const App: React.FC = () => {
               </p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Products Section - Info Only */}
-      <section id="products" className="py-24 relative">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-gold-600 uppercase tracking-widest text-xs font-bold mb-2 block">
-              Koleksi Kami
-            </span>
-            <h3 className="font-serif text-4xl text-stone-900 mb-4">
-              Kenali Produk Kami
-            </h3>
-            <p className="text-stone-500 max-w-lg mx-auto">
-              Klik produk untuk melihat detail manfaat dan ingredients
-            </p>
-            <div className="w-20 h-1 bg-gold-400 mx-auto rounded-full mt-4"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {PRODUCTS.map((product) => (
-              <div key={product.id} className="flex justify-center">
-                <ProductCard
-                  product={product}
-                  onViewDetail={setSelectedProduct}
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -506,6 +459,7 @@ const App: React.FC = () => {
               <TestimonialCard
                 key={testimonial.id}
                 testimonial={testimonial}
+                onImageClick={setLightboxImage}
               />
             ))}
           </div>
@@ -746,6 +700,27 @@ const App: React.FC = () => {
           product={selectedProduct}
           onClose={() => setSelectedProduct(null)}
         />
+      )}
+
+      {/* Lightbox Modal */}
+      {lightboxImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setLightboxImage(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white hover:text-gold-400 transition-colors"
+            onClick={() => setLightboxImage(null)}
+          >
+            <X className="w-8 h-8" />
+          </button>
+          <img
+            src={lightboxImage}
+            alt="Testimoni"
+            className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
       )}
     </div>
   );

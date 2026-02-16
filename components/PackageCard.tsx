@@ -74,20 +74,8 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg, products, whatsappNumber
           </div>
         </div>
 
-        {/* Price */}
+        {/* Order Button */}
         <div className="mt-auto">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            {pkg.originalPrice && (
-              <span className="text-stone-400 line-through text-sm">
-                Rp {pkg.originalPrice.toLocaleString('id-ID')}
-              </span>
-            )}
-            <span className="font-serif text-2xl text-gold-600 font-bold">
-              Rp {pkg.price.toLocaleString('id-ID')}
-            </span>
-          </div>
-
-          {/* WhatsApp Order Button */}
           <button
             onClick={handleOrderWhatsApp}
             className="w-full py-4 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center gap-3 font-medium uppercase text-sm tracking-widest transition-all duration-300 shadow-lg hover:shadow-xl"
