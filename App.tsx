@@ -336,8 +336,8 @@ const App: React.FC = () => {
                 </span>
               </div>
               <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl leading-tight text-stone-900 mb-6">
-                Kulit Putih <br />
-                <span className="text-gold-gradient italic pr-2">dan Sehat</span>
+                Kulit Putih &<br />
+                <span className="text-gold-gradient italic pr-2">Sehat</span>
               </h2>
               <p className="font-sans text-stone-500 text-lg leading-relaxed max-w-lg mx-auto md:mx-0 mb-10">
                 Rasakan kemewahan LAS Brightening. Formula triple-action kami
@@ -637,8 +637,8 @@ const App: React.FC = () => {
           {/* Info */}
           <div className="bg-gold-100/50 rounded-2xl p-6 border border-gold-200 max-w-2xl mx-auto">
             <p className="text-stone-700 text-sm leading-relaxed text-center">
-              Untuk pemesanan di luar area tersebut, silakan hubungi kami
-              via WhatsApp untuk informasi lebih lanjut.
+              Untuk pemesanan di luar area tersebut, silakan hubungi kami via
+              WhatsApp untuk informasi lebih lanjut.
             </p>
           </div>
         </div>
