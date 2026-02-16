@@ -65,22 +65,24 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onClose }) => {
             </div>
 
             {/* Ingredients */}
-            <div className="mb-4">
-              <h4 className="font-serif text-lg text-stone-800 mb-3 flex items-center gap-2">
-                <FlaskConical className="w-5 h-5 text-gold-500" />
-                Ingredients
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {product.ingredients.map((ingredient, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3 py-1 bg-stone-50 border border-stone-200 text-stone-600 text-xs rounded-full"
-                  >
-                    {ingredient}
-                  </span>
-                ))}
+            {product.ingredients.length > 0 && (
+              <div className="mb-4">
+                <h4 className="font-serif text-lg text-stone-800 mb-3 flex items-center gap-2">
+                  <FlaskConical className="w-5 h-5 text-gold-500" />
+                  Ingredients
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {product.ingredients.map((ingredient, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 bg-stone-50 border border-stone-200 text-stone-600 text-xs rounded-full"
+                    >
+                      {ingredient}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="mt-auto pt-4 border-t border-stone-100">
               <p className="text-stone-400 text-xs text-center">

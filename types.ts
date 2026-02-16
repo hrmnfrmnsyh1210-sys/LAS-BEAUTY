@@ -9,6 +9,16 @@ export interface Product {
   image: string;
 }
 
+export interface Testimonial {
+  id: string;
+  name: string;
+  location: string;
+  rating: number;
+  comment: string;
+  product: string;
+  image?: string;
+}
+
 export interface Package {
   id: string;
   name: string;
