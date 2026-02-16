@@ -133,7 +133,7 @@ const PACKAGES: Package[] = [
     id: "pkg-2",
     name: "Paket Lengkap",
     description:
-      "Paket lengkap 3-in-1 untuk hasil maksimal. Toner + Day Cream + Night Cream untuk rutinitas perawatan kulit menyeluruh.",
+      "Paket lengkap 3-in-1 untuk hasil maksimal. Toner + Lotion Siang + Lotion Malam untuk rutinitas perawatan kulit menyeluruh.",
     price: 385000,
     originalPrice: 435000,
     productIds: ["2", "1", "3"],
