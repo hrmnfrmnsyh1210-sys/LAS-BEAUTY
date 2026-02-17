@@ -162,7 +162,8 @@ const TESTIMONIALS: Testimonial[] = [
     comment:
       "Setelah 2 minggu pakai Paket Lengkap, kulit wajah saya jadi lebih cerah dan glowing. Noda bekas jerawat juga mulai memudar. Sangat recommended!",
     product: "Paket Lengkap",
-    image: "/images/testi.jpeg",
+    imageBefore: "/images/testi.jpeg",
+    imageAfter: "/images/testi.jpeg",
   },
   {
     id: "t2",
@@ -172,7 +173,8 @@ const TESTIMONIALS: Testimonial[] = [
     comment:
       "Lotion malamnya bagus banget, teksturnya ringan dan tidak lengket. Bangun tidur kulit terasa lebih halus dan lembap. Suka banget!",
     product: "Lotion Malam",
-    image: "/images/testi.jpeg",
+    imageBefore: "/images/testi.jpeg",
+    imageAfter: "/images/testi.jpeg",
   },
   {
     id: "t3",
@@ -182,7 +184,8 @@ const TESTIMONIALS: Testimonial[] = [
     comment:
       "Toner LAS ini seger banget di kulit, pori-pori terasa lebih kecil setelah rutin pakai. Cocok banget buat kulit berminyak kayak saya.",
     product: "Toner LAS",
-    image: "/images/testi.jpeg",
+    imageBefore: "/images/testi.jpeg",
+    imageAfter: "/images/testi.jpeg",
   },
   {
     id: "t4",
@@ -192,7 +195,8 @@ const TESTIMONIALS: Testimonial[] = [
     comment:
       "Lotion siangnya enak dipakai, tidak bikin wajah berminyak dan ada SPF 70 jadi tidak perlu sunscreen lagi. Kulit jadi lebih terlindungi.",
     product: "Lotion Siang",
-    image: "/images/testi.jpeg",
+    imageBefore: "/images/testi.jpeg",
+    imageAfter: "/images/testi.jpeg",
   },
   {
     id: "t5",
@@ -202,7 +206,8 @@ const TESTIMONIALS: Testimonial[] = [
     comment:
       "Awalnya ragu, tapi setelah coba Paket Day & Night hasilnya luar biasa! Kulit lebih cerah merata dan teman-teman mulai notice perubahan di wajah saya.",
     product: "Paket Day & Night",
-    image: "/images/testi.jpeg",
+    imageBefore: "/images/testi.jpeg",
+    imageAfter: "/images/testi.jpeg",
   },
   {
     id: "t6",
@@ -212,7 +217,8 @@ const TESTIMONIALS: Testimonial[] = [
     comment:
       "Produk LAS ini beneran bagus, bahan-bahannya alami dan hasilnya nyata. Udah repurchase 3 kali dan tidak mau ganti skincare lain!",
     product: "Paket Lengkap",
-    image: "/images/testi.jpeg",
+    imageBefore: "/images/testi.jpeg",
+    imageAfter: "/images/testi.jpeg",
   },
 ];
 
