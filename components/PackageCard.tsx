@@ -13,16 +13,8 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg, products, whatsappNumber
   const includedProducts = products.filter(p => pkg.productIds.includes(p.id));
 
   const handleOrderWhatsApp = () => {
-    const productList = includedProducts
-      .map(p => {
-        const type = p.type === 'Toner' ? 'Toner' : p.type === 'Day' ? 'Lotion Siang' : 'Lotion Malam';
-        return `- ${type} ${p.name} (${p.volume})`;
-      })
-      .join('\n');
-
     const message = encodeURIComponent(
-      `Halo kak, saya mau tanya-tanya tentang *${pkg.name}* LAS Brightening dong.\n\n` +
-      `Isi paketnya:\n${productList}\n\n` +
+      `Halo kak, saya mau tanya-tanya tentang LAS Brightening.\n\n` +
       `Boleh info harga dan cara pemesanannya kak? Terima kasih!`
     );
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
