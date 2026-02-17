@@ -21,11 +21,9 @@ const PackageCard: React.FC<PackageCardProps> = ({ pkg, products, whatsappNumber
       .join('\n');
 
     const message = encodeURIComponent(
-      `Halo, saya ingin memesan paket LAS Brightening:\n\n` +
-      `*${pkg.name}*\n` +
-      `Harga: Rp ${pkg.price.toLocaleString('id-ID')}\n\n` +
-      `Isi paket:\n${productList}\n\n` +
-      `Mohon info lebih lanjut untuk pemesanan. Terima kasih!`
+      `Halo kak, saya mau tanya-tanya tentang *${pkg.name}* LAS Brightening dong.\n\n` +
+      `Isi paketnya:\n${productList}\n\n` +
+      `Boleh info harga dan cara pemesanannya kak? Terima kasih!`
     );
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
   };
