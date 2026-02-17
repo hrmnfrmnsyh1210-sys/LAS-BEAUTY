@@ -20,12 +20,31 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageC
 
   const initial = testimonial.name.charAt(0).toUpperCase();
   const censored = censorName(testimonial.name);
-  const hasImages = testimonial.imageBefore || testimonial.imageAfter;
+  const hasBeforeAfter = testimonial.imageBefore || testimonial.imageAfter;
 
   return (
     <div className="bg-white rounded-3xl shadow-xl border border-stone-100 flex flex-col hover:shadow-2xl transition-all duration-300 overflow-hidden">
+      {/* Single Photo */}
+      {!hasBeforeAfter && testimonial.image && (
+        <div
+          className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100 cursor-pointer group"
+          onClick={() => onImageClick?.(testimonial.image!)}
+        >
+          <img
+            src={testimonial.image}
+            alt={`Testimoni - ${testimonial.name}`}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
+              <ZoomIn className="w-4 h-4 text-stone-700" />
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Before & After Photos */}
-      {hasImages && (
+      {hasBeforeAfter && (
         <div className="flex w-full">
           {testimonial.imageBefore && (
             <div

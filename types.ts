@@ -16,6 +16,7 @@ export interface Testimonial {
   rating: number;
   comment: string;
   product: string;
+  image?: string;
   imageBefore?: string;
   imageAfter?: string;
 }
