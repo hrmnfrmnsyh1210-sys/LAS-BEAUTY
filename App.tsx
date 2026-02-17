@@ -142,7 +142,7 @@ const PACKAGES: Package[] = [
     id: "pkg-3",
     name: "Paket Fresh",
     description:
-      "Kombinasi toner dan lotion siang untuk tampilan segar dan glowing sepanjang hari.",
+      "Kombinasi toner dan lotion siang untuk kulit cerah dan terlindungi sepanjang hari.",
     price: 240000,
     originalPrice: 270000,
     productIds: ["2", "1"],
@@ -169,7 +169,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Baru 2 minggu pakek Paket Lengkap, muke dah mulai cerah beneran loh. Bekas jerawat pun makin ilang. Pokoknye recommended banget dah!",
+      "Baru 2 minggu pakek Paket Lengkap, kulit badan dah mulai cerah beneran loh. Bekas hitam pun makin ilang. Pokoknye recommended banget dah!",
     product: "Paket Lengkap",
     imageBefore: "/images/before1.jpeg",
     imageAfter: "/images/after1.jpeg",
@@ -180,7 +180,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Lotion malamnya nyaman jak dipakek, ringan gak lengket. Bangun tidur muke rasa halus lembap gitu. Suke banget lah pokoknye!",
+      "Lotion malamnya nyaman dipakek, ringan gak lengket. Bangun tidur kulit rasa halus lembap gitu. Suke banget lah pokoknye!",
     product: "Lotion Malam",
     imageBefore: "/images/before2.jpeg",
     imageAfter: "/images/after2.jpeg",
@@ -191,7 +191,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Toner nye seger banget di muke, pori-pori rase makin kecil setelah rutin pakek. Cocok gile buat yang mukenye berminyak macam aku ni!",
+      "Toner nye seger banget di kulit, abis mandi langsung pakek rase adem dan lembap. Cocok gile buat kulit yang kering macam aku ni!",
     product: "Toner LAS",
     imageBefore: "/images/before3.jpeg",
     imageAfter: "/images/after3.jpeg",
@@ -202,7 +202,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 4,
     comment:
-      "Lotion siangnya enak jak dipakek, gak bikin muke berminyak. Ade SPF 70 lagi jadi gak perlu sunscreen lagi dah. Mantap!",
+      "Lotion siangnya enak dipakek, gak bikin kulit berminyak. Ade SPF 70 lagi jadi gak perlu takut panas matahari dah. Mantap!",
     product: "Lotion Siang",
     imageBefore: "/images/before4.jpeg",
     imageAfter: "/images/after4.jpeg",
@@ -213,7 +213,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Awalnye ragu jak, tapi setelah coba Paket Day & Night hasilnye gile sih! Kulit makin cerah merata, kawan-kawan pun mulai notice perubahan di muke aku.",
+      "Awalnye ragu, tapi setelah coba Paket Day & Night hasilnye gile sih! Kulit badan makin cerah merata, kawan-kawan pun mulai notice perubahannye.",
     product: "Paket Day & Night",
     imageBefore: "/images/before5.jpeg",
     imageAfter: "/images/after5.jpeg",
@@ -235,7 +235,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Dah sebulan pakek LAS, kulit muke rase beda banget. Lebih cerah dan halus, gak nyesel dah coba produk ni!",
+      "Dah sebulan pakek LAS, kulit badan rase beda banget. Lebih cerah dan halus, gak nyesel dah coba produk ni!",
     product: "Paket Lengkap",
     image: "/testi1.jpeg",
   },
@@ -245,7 +245,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Toner nye wangi dan seger, gak bikin kulit kering. Dipakek tiap hari pun nyaman jak. Suke banget!",
+      "Toner nye wangi dan seger, gak bikin kulit kering. Dipakek tiap hari pun nyaman. Suke banget!",
     product: "Toner LAS",
     image: "/testi2.jpeg",
   },
@@ -255,7 +255,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 4,
     comment:
-      "Lotion malamnya ringan banget, gak berat di muke. Bangun tidur kulit rase kenyal dan lembap. Top lah!",
+      "Lotion malamnya ringan banget, gak berat di kulit. Bangun tidur kulit rase kenyal dan lembap. Top lah!",
     product: "Lotion Malam",
     image: "/testi3.jpeg",
   },
@@ -265,7 +265,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Pakek Paket Day & Night dah 3 minggu, muke makin putih merata. Kawan-kawan sampai nanya pakek ape. Hehe!",
+      "Pakek Paket Day & Night dah 3 minggu, kulit badan makin putih merata. Kawan-kawan sampai nanya pakek ape. Hehe!",
     product: "Paket Day & Night",
     image: "/testi4.jpeg",
   },
@@ -275,7 +275,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Gile sih hasilnye, baru sebulan pakek muke dah beda jauh. Cerah merata dan bekas flek makin samar!",
+      "Gile sih hasilnye, baru sebulan pakek kulit dah beda jauh. Cerah merata dan bekas hitam makin samar!",
     product: "Paket Lengkap",
     image: "/testi5.jpeg",
   },
@@ -285,7 +285,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Lotion siangnya enak banget, gak bikin muke kilang-kilang. Muke rase adem jak seharian!",
+      "Lotion siangnya enak banget, gak bikin kulit berminyak. Kulit rase adem seharian!",
     product: "Lotion Siang",
     image: "/testi6.jpeg",
   },
@@ -295,7 +295,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Kawan-kawan pada nanya aku pakek ape, kulit muke dah makin putih dan halus. LAS emang juara dah!",
+      "Kawan-kawan pada nanya aku pakek ape, kulit badan dah makin putih dan halus. LAS emang juara dah!",
     product: "Paket Lengkap",
     image: "/testi7.jpeg",
   },
@@ -305,7 +305,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 4,
     comment:
-      "Toner nye seger banget, dipakek abis mandi rase nyaman jak. Kulit muke makin lembap dan gak kering!",
+      "Toner nye seger banget, dipakek abis mandi rase nyaman. Kulit badan makin lembap dan gak kering!",
     product: "Toner LAS",
     image: "/testi8.jpeg",
   },
@@ -315,7 +315,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Lotion malamnya harum dan ringan, gak lengket jak. Pagi bangun tidur muke rase halus dan kenyal. Suke!",
+      "Lotion malamnya harum dan ringan, gak lengket. Pagi bangun tidur kulit rase halus dan kenyal. Suke!",
     product: "Lotion Malam",
     image: "/testi9.jpeg",
   },
@@ -325,7 +325,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Dah coba macam-macam skincare tapi LAS yang paling cocok. Muke gak breakout dan makin cerah tiap hari!",
+      "Dah coba macam-macam skincare tapi LAS yang paling cocok. Kulit gak iritasi dan makin cerah tiap hari!",
     product: "Paket Day & Night",
     image: "/testi10.jpeg",
   },
@@ -345,7 +345,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Baru 3 minggu pakek tapi dah keliatan beda. Kulit muke lebih cerah dan tone nye merata. Gak nyesel dah!",
+      "Baru 3 minggu pakek tapi dah keliatan beda. Kulit badan lebih cerah dan tone nye merata. Gak nyesel dah!",
     product: "Paket Fresh",
     image: "/testi12.jpeg",
   },
@@ -365,7 +365,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Aku pakek LAS dah 2 bulan, hasilnye beneran nyata. Muke makin putih bersih, gak kusam lagi dah!",
+      "Aku pakek LAS dah 2 bulan, hasilnye beneran nyata. Kulit makin putih bersih, gak kusam lagi dah!",
     product: "Paket Lengkap",
     image: "/testi14.jpeg",
   },
@@ -375,7 +375,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Toner nye bikin muke rase seger dan bersih, pori-pori rase makin kecil. Cocok banget lah!",
+      "Toner nye bikin kulit rase seger dan bersih abis mandi. Kulit jadi lembap dan gak kering. Cocok banget lah!",
     product: "Toner LAS",
     image: "/testi15.jpeg",
   },
@@ -385,7 +385,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Suke banget sama lotion malamnya, teksturnye lembut dan cepat meresap. Muke makin glowing tiap pagi!",
+      "Suke banget sama lotion malamnya, teksturnye lembut dan cepat meresap. Kulit makin halus tiap pagi!",
     product: "Lotion Malam",
     image: "/testi16.jpeg",
   },
@@ -405,7 +405,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 4,
     comment:
-      "Pakek Paket Day & Night nye rutin, kulit muke jadi lebih kenyal dan lembap. Gak kering lagi dah!",
+      "Pakek Paket Day & Night nye rutin, kulit badan jadi lebih kenyal dan lembap. Gak kering lagi dah!",
     product: "Paket Day & Night",
     image: "/testi18.jpeg",
   },
@@ -425,7 +425,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Lotion malamnya juara sih, bangun tidur muke rase beda. Lebih halus dan cerah, gak kusam lagi!",
+      "Lotion malamnya juara sih, bangun tidur kulit rase beda. Lebih halus dan cerah, gak kusam lagi!",
     product: "Lotion Malam",
     image: "/testi21.jpeg",
   },
@@ -435,7 +435,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Sambas",
     rating: 5,
     comment:
-      "Kulit muke aku dulu nye kusam dan gak merata, sekarang dah pakek LAS makin putih dan sehat. Top!",
+      "Kulit badan aku dulu nye kusam dan gak merata, sekarang dah pakek LAS makin putih dan sehat. Top!",
     product: "Paket Lengkap",
     image: "/testi22.jpeg",
   },
@@ -445,7 +445,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 4,
     comment:
-      "Toner LAS seger banget, dipakek pagi sama malam kulit muke rase bersih dan lembap. Recommended!",
+      "Toner LAS seger banget, dipakek pagi sama malam kulit badan rase bersih dan lembap. Recommended!",
     product: "Toner LAS",
     image: "/testi23.jpeg",
   },
@@ -465,7 +465,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Senang banget ketemu LAS, kulit muke dah berubah banyak. Makin percaya diri keluar rumah sekarang!",
+      "Senang banget ketemu LAS, kulit badan dah berubah banyak. Makin percaya diri pakek baju lengan pendek sekarang!",
     product: "Paket Lengkap",
     image: "/testi25.jpeg",
   },
@@ -485,7 +485,7 @@ const TESTIMONIALS: Testimonial[] = [
     location: "Pontianak",
     rating: 5,
     comment:
-      "Dah setahun pakek LAS dan gak mau ganti lagi. Kulit muke makin putih sehat, bahan-bahannye pun aman!",
+      "Dah setahun pakek LAS dan gak mau ganti lagi. Kulit badan makin putih sehat, bahan-bahannye pun aman!",
     product: "Paket Lengkap",
     image: "/testi27.jpeg",
   },
