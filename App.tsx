@@ -9,9 +9,7 @@ import {
   Menu,
   X,
   ArrowRight,
-  Instagram,
   Facebook,
-  Twitter,
   Award,
   Sparkles,
   MapPin,
@@ -947,22 +945,12 @@ const App: React.FC = () => {
 
             <div className="flex gap-6">
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-stone-600 hover:text-gold-500 hover:scale-110 transition-all"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61588199164566"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-stone-600 hover:text-gold-500 hover:scale-110 transition-all"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-stone-600 hover:text-gold-500 hover:scale-110 transition-all"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
