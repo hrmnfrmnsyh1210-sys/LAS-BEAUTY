@@ -118,16 +118,6 @@ const PRODUCTS: Product[] = [
 // Data Paket
 const PACKAGES: Package[] = [
   {
-    id: "pkg-1",
-    name: "Paket Day & Night",
-    description:
-      "Paket dasar untuk rutinitas pagi dan malam. Lindungi kulit di siang hari dan perbaiki di malam hari.",
-    price: 280000,
-    originalPrice: 315000,
-    productIds: ["1", "3"],
-    image: "/images/hb toner.jpeg",
-  },
-  {
     id: "pkg-2",
     name: "Paket Lengkap",
     description:
@@ -139,6 +129,16 @@ const PACKAGES: Package[] = [
     badge: "Best Seller",
   },
   {
+    id: "pkg-1",
+    name: "Paket Day & Night",
+    description:
+      "Paket dasar untuk rutinitas pagi dan malam. Lindungi kulit di siang hari dan perbaiki di malam hari.",
+    price: 280000,
+    originalPrice: 315000,
+    productIds: ["1", "3"],
+    image: "/images/siang malam.png",
+  },
+  {
     id: "pkg-3",
     name: "Paket Fresh",
     description:
@@ -146,7 +146,17 @@ const PACKAGES: Package[] = [
     price: 240000,
     originalPrice: 270000,
     productIds: ["2", "1"],
-    image: "/images/hb toner.jpeg",
+    image: "/images/toner  siang.png",
+  },
+  {
+    id: "pkg-4",
+    name: "Paket Night Care",
+    description:
+      "Kombinasi toner dan lotion malam untuk perawatan kulit optimal saat tidur. Bersihkan dan perbaiki kulit semalaman.",
+    price: 250000,
+    originalPrice: 280000,
+    productIds: ["2", "3"],
+    image: "/images/toner malam.png",
   },
 ];
 
