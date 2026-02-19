@@ -429,19 +429,562 @@ const TESTIMONIALS: Testimonial[] = [
     id: "t33",
     name: "Bunga Citra",
     rating: 5,
-    comment:
-      "Dah setahun pakek LAS dan gak mau ganti lagi. Kulit badan makin putih sehat, bahan-bahannye pun aman!",
+    comment: "-",
     product: "Paket Lengkap",
-    image: "/testi27.jpeg",
+    image: "/nocap/nocap9.jpeg",
   },
   {
     id: "t34",
     name: "Rosa Damayanti",
     rating: 5,
-    comment:
-      "LAS ni skincare terbaik yang pernah aku coba. Hasilnye cepat kerasa dan gak bikin kulit ketergantungan!",
+    comment: "-",
     product: "Paket Lengkap",
-    image: "/testi28.jpeg",
+    image: "/nocap/nocap10.jpeg",
+  },
+  {
+    id: "t35",
+    name: "Dian Purnama",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    image: "/nocap/nocap11.jpeg",
+  },
+  {
+    id: "t36",
+    name: "Suci Ramadhani",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap12.jpeg",
+  },
+  {
+    id: "t37",
+    name: "Naomi Kusuma",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap13.jpeg",
+  },
+  {
+    id: "t38",
+    name: "Bella Safira",
+    rating: 5,
+    comment: "Mantul Real Putih",
+    product: "Lotion Siang",
+    image: "/testimoni/testi19.jpeg",
+  },
+  {
+    id: "t39",
+    name: "Citra Dewi",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap14.jpeg",
+  },
+  {
+    id: "t40",
+    name: "Reva Santika",
+    rating: 5,
+    comment: "-",
+    product: "Paket Fresh",
+    image: "/nocap/nocap15.jpeg",
+  },
+  {
+    id: "t41",
+    name: "Aisyah Nur",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    image: "/nocap/nocap16.jpeg",
+  },
+  {
+    id: "t42",
+    name: "Febri Wulandari",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap17.jpeg",
+  },
+  {
+    id: "t43",
+    name: "Tiara Agustin",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap18.jpeg",
+  },
+  {
+    id: "t44",
+    name: "Mila Kusumawati",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap19.jpeg",
+  },
+  {
+    id: "t45",
+    name: "Hana Pratiwi",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap20.jpeg",
+  },
+  {
+    id: "t46",
+    name: "Vira Andini",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap21.jpeg",
+  },
+  {
+    id: "t47",
+    name: "Yulia Rahayu",
+    rating: 5,
+    comment: "Sebelum Dan Sesudah",
+    product: "Lotion Malam",
+    imageBefore: "/before/before5.jpeg",
+    imageAfter: "/after/after5.jpeg",
+  },
+  {
+    id: "t48",
+    name: "Risa Amelia",
+    rating: 5,
+    comment: "😍",
+    product: "Toner LAS",
+    image: "/testimoni/testi20.jpeg",
+  },
+  {
+    id: "t49",
+    name: "Nita Kurniawati",
+    rating: 5,
+    comment: "Buat kulit halus lembut 🫰🏻",
+    product: "Paket Lengkap",
+    images: ["/slide/slide3.jpeg", "/slide/slides3.jpeg"],
+  },
+  {
+    id: "t50",
+    name: "Gita Puspita",
+    rating: 5,
+    comment: "Lotion malam favoritku buat bantu cerahin kulit",
+    product: "Lotion Siang",
+    image: "/testimoni/testi21.jpeg",
+  },
+  {
+    id: "t51",
+    name: "Ira Septiani",
+    rating: 5,
+    comment: "Sekali Oleh Langsung Meresap Dan Harum",
+    product: "Paket Fresh",
+    images: ["/slide/slide4.jpeg", "/slide/slides4.jpeg"],
+  },
+  {
+    id: "t52",
+    name: "Laras Setyowati",
+    rating: 5,
+    comment: "Kelihatan sekali bedanya setelah kenal hb ini 😭",
+    product: "Paket Lengkap",
+    images: [
+      "/slide/slide5.jpeg",
+      "/slide/slides5.jpeg",
+      "/slide/slidest5.jpeg",
+    ],
+  },
+  {
+    id: "t53",
+    name: "Devi Anggraeni",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    imageBefore: "/before/before6.jpeg",
+    imageAfter: "/after/after6.jpeg",
+  },
+  {
+    id: "t54",
+    name: "Siska Maharani",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap22.jpeg",
+  },
+  {
+    id: "t55",
+    name: "Reina Maharani",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap23.jpeg",
+  },
+  {
+    id: "t56",
+    name: "Putri Handayani",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    image: "/nocap/nocap24.jpeg",
+  },
+  {
+    id: "t57",
+    name: "Winda Lestari",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap25.jpeg",
+  },
+  {
+    id: "t58",
+    name: "Amelia Putri",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap26.jpeg",
+  },
+  {
+    id: "t59",
+    name: "Sari Dewi",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap27.jpeg",
+  },
+  {
+    id: "t60",
+    name: "Fitria Rahayu",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap28.jpeg",
+  },
+  {
+    id: "t61",
+    name: "Nabila Salsabila",
+    rating: 5,
+    comment: "Awal pemakaian sudah terasa hasilnya🫣",
+    product: "Paket Fresh",
+    images: ["/slide/slide6.jpeg", "/slide/slides6.jpeg"],
+  },
+  {
+    id: "t62",
+    name: "Karina Septiani",
+    rating: 5,
+    comment: "Tonernya Buat Kulit Jadi Segar hihi",
+    product: "Lotion Malam",
+    images: ["/slide/slide7.jpeg", "/slide/slides7.jpeg"],
+  },
+  {
+    id: "t63",
+    name: "Hilda Pramesti",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap29.jpeg",
+  },
+  {
+    id: "t64",
+    name: "Zahra Amalia",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap30.jpeg",
+  },
+  {
+    id: "t65",
+    name: "Lusi Anggraini",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap31.jpeg",
+  },
+  {
+    id: "t66",
+    name: "Novi Susanti",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap32.jpeg",
+  },
+  {
+    id: "t67",
+    name: "Anis Fitriani",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap33.jpeg",
+  },
+  {
+    id: "t68",
+    name: "Rini Puspitasari",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    image: "/nocap/nocap34.jpeg",
+  },
+  {
+    id: "t69",
+    name: "Dwi Cahyani",
+    rating: 5,
+    comment: "-",
+    product: "Paket Fresh",
+    image: "/nocap/nocap35.jpeg",
+  },
+  {
+    id: "t70",
+    name: "Mega Pratiwi",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap36.jpeg",
+  },
+  {
+    id: "t71",
+    name: "Titi Nurwati",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap37.jpeg",
+  },
+  {
+    id: "t72",
+    name: "Esti Wahyuni",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap38.jpeg",
+  },
+  {
+    id: "t73",
+    name: "Shinta Rahmawati",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap39.jpeg",
+  },
+  {
+    id: "t74",
+    name: "Yeni Kurniasih",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap40.jpeg",
+  },
+  {
+    id: "t75",
+    name: "Lina Agustina",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    image: "/nocap/nocap41.jpeg",
+  },
+  {
+    id: "t76",
+    name: "Ratih Purnawati",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap42.jpeg",
+  },
+  {
+    id: "t77",
+    name: "Devy Kusumastuti",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap43.jpeg",
+  },
+  {
+    id: "t78",
+    name: "Nisa Fauziah",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap44.jpeg",
+  },
+  {
+    id: "t79",
+    name: "Rara Setiawati",
+    rating: 5,
+    comment: "Awal pemakaian aja udah promising banget",
+    product: "Paket Day & Night",
+    images: ["/slide/slide8.jpeg", "/slide/slides8.jpeg"],
+  },
+  {
+    id: "t80",
+    name: "Indri Wahyuningsih",
+    rating: 5,
+    comment: "Dipakai pertama kali, langsung suka teksturnya",
+    product: "Paket Lengkap",
+    images: ["/slide/slide9.jpeg", "/slide/slides9.jpeg"],
+  },
+  {
+    id: "t81",
+    name: "Tari Novitasari",
+    rating: 5,
+    comment:
+      "Nih before after di kulitku , jangan di ragukan lagi produk ini 🥰",
+    product: "Paket Fresh",
+    imageBefore: "/before/before7.jpeg",
+    imageAfter: "/after/after7.jpeg",
+  },
+  {
+    id: "t82",
+    name: "Mira Oktaviani",
+    rating: 5,
+    comment: "Alhamdulillah bisa menghilangkan belang di tangan",
+    product: "Lotion Malam",
+    imageBefore: "/before/before8.jpeg",
+    imageAfter: "/after/after8.jpeg",
+  },
+  {
+    id: "t83",
+    name: "Sinta Permatasari",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap45.jpeg",
+  },
+  {
+    id: "t84",
+    name: "Eka Rahmawati",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap46.jpeg",
+  },
+  {
+    id: "t85",
+    name: "Yuli Handayani",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap47.jpeg",
+  },
+  {
+    id: "t86",
+    name: "Pipit Andriani",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap48.jpeg",
+  },
+  {
+    id: "t87",
+    name: "Reni Marliana",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap49.jpeg",
+  },
+  {
+    id: "t88",
+    name: "Dita Febriani",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Malam",
+    image: "/nocap/nocap50.jpeg",
+  },
+  {
+    id: "t89",
+    name: "Ulfah Nurhayati",
+    rating: 5,
+    comment: "-",
+    product: "Paket Fresh",
+    image: "/nocap/nocap51.jpeg",
+  },
+  {
+    id: "t90",
+    name: "Rizka Amalia",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap52.jpeg",
+  },
+  {
+    id: "t91",
+    name: "Sela Oktaria",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap53.jpeg",
+  },
+  {
+    id: "t92",
+    name: "Nuri Rahmadani",
+    rating: 5,
+    comment: "HB Pemutih cukup ringan dan enak dipakai setiap hari",
+    product: "Lotion Siang",
+    image: "/testimoni/testi22.jpeg",
+  },
+  {
+    id: "t93",
+    name: "Dewi Pramudita",
+    rating: 5,
+    comment: "Teksturnya nyaman, hasilnya terlihat",
+    product: "Paket Day & Night",
+    image: "/testimoni/testi23.jpeg",
+  },
+  {
+    id: "t94",
+    name: "Fitri Ramadhani",
+    rating: 5,
+    comment: "Sukaaa banget sama hasilnya beneran putih dong😭",
+    product: "Paket Lengkap",
+    image: "/testimoni/testi24.jpeg",
+  },
+  {
+    id: "t95",
+    name: "Amel Puspitasari",
+    rating: 5,
+    comment: "Orderan pertama varian day night 🥰",
+    product: "Lotion Malam",
+    image: "/testimoni/testi25.jpeg",
+  },
+  {
+    id: "t96",
+    name: "Wulandari Setia",
+    rating: 5,
+    comment: "-",
+    product: "Paket Lengkap",
+    image: "/nocap/nocap54.jpeg",
+  },
+  {
+    id: "t97",
+    name: "Nia Rosalinda",
+    rating: 5,
+    comment: "-",
+    product: "Toner LAS",
+    image: "/nocap/nocap55.jpeg",
+  },
+  {
+    id: "t98",
+    name: "Sari Puspita",
+    rating: 5,
+    comment: "-",
+    product: "Lotion Siang",
+    image: "/nocap/nocap56.jpeg",
+  },
+  {
+    id: "t99",
+    name: "Kartika Dewi",
+    rating: 5,
+    comment: "-",
+    product: "Paket Day & Night",
+    image: "/nocap/nocap57.jpeg",
+  },
+  {
+    id: "t100",
+    name: "Riana Safitri",
+    rating: 5,
+    comment: "Lotion siang malamnya ringan, nggak lengket",
+    product: "Paket Fresh",
+    image: "/testimoni/testi26.jpeg",
+  },
+  {
+    id: "t101",
+    name: "Melinda Cahyani",
+    rating: 5,
+    comment: "-",
+    product: "Paket Fresh",
+    image: "/nocap/nocap58.jpeg",
   },
 ];
 
@@ -467,7 +1010,7 @@ const App: React.FC = () => {
     setLightbox((lb) =>
       lb ? { ...lb, index: (lb.index + 1) % lb.images.length } : lb,
     );
-  const [showAllTestimonials, setShowAllTestimonials] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(9);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -699,12 +1242,7 @@ const App: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {(showAllTestimonials
-              ? TESTIMONIALS
-              : TESTIMONIALS.filter(
-                  (t) => t.imageBefore || t.imageAfter || t.image,
-                )
-            ).map((testimonial) => (
+            {TESTIMONIALS.slice(0, visibleCount).map((testimonial) => (
               <TestimonialCard
                 key={testimonial.id}
                 testimonial={testimonial}
@@ -714,14 +1252,21 @@ const App: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-            <button
-              onClick={() => setShowAllTestimonials(!showAllTestimonials)}
-              className="px-8 py-4 bg-stone-900 text-white rounded-full font-sans uppercase tracking-widest text-sm hover:bg-gold-600 transition-colors shadow-lg hover:shadow-xl"
-            >
-              {showAllTestimonials
-                ? "Sembunyikan Testimoni"
-                : "Lihat Semua Testimoni"}
-            </button>
+            {visibleCount < TESTIMONIALS.length ? (
+              <button
+                onClick={() => setVisibleCount((c) => c + 9)}
+                className="px-8 py-4 bg-stone-900 text-white rounded-full font-sans uppercase tracking-widest text-sm hover:bg-gold-600 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Lihat Lebih Banyak
+              </button>
+            ) : (
+              <button
+                onClick={() => setVisibleCount(9)}
+                className="px-8 py-4 bg-stone-900 text-white rounded-full font-sans uppercase tracking-widest text-sm hover:bg-gold-600 transition-colors shadow-lg hover:shadow-xl"
+              >
+                Lihat Lebih Sedikit
+              </button>
+            )}
           </div>
         </div>
       </section>
