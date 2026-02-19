@@ -12,11 +12,11 @@ export interface Product {
 export interface Testimonial {
   id: string;
   name: string;
-  location: string;
   rating: number;
   comment: string;
   product: string;
   image?: string;
+  images?: string[];
   imageBefore?: string;
   imageAfter?: string;
 }

@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Testimonial } from "../types";
-import { Star, Quote, ZoomIn } from "lucide-react";
+import { Star, Quote, ZoomIn, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface TestimonialCardProps {
   testimonial: Testimonial;
-  onImageClick?: (image: string) => void;
+  onImageClick?: (images: string[], index: number) => void;
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageClick }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const censorName = (name: string) => {
     return name
       .split(" ")
@@ -21,14 +23,77 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageC
   const initial = testimonial.name.charAt(0).toUpperCase();
   const censored = censorName(testimonial.name);
   const hasBeforeAfter = testimonial.imageBefore || testimonial.imageAfter;
+  const hasMultipleImages = testimonial.images && testimonial.images.length > 0;
+
+  const prevImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!testimonial.images) return;
+    setCurrentIndex((i) => (i - 1 + testimonial.images!.length) % testimonial.images!.length);
+  };
+
+  const nextImage = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!testimonial.images) return;
+    setCurrentIndex((i) => (i + 1) % testimonial.images!.length);
+  };
 
   return (
     <div className="bg-white rounded-3xl shadow-xl border border-stone-100 flex flex-col hover:shadow-2xl transition-all duration-300 overflow-hidden">
-      {/* Single Photo */}
-      {!hasBeforeAfter && testimonial.image && (
+      {/* Multiple Images Carousel */}
+      {hasMultipleImages && !hasBeforeAfter && (
         <div
           className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100 cursor-pointer group"
-          onClick={() => onImageClick?.(testimonial.image!)}
+          onClick={() => onImageClick?.(testimonial.images!, currentIndex)}
+        >
+          <img
+            src={testimonial.images![currentIndex]}
+            alt={`Testimoni - ${testimonial.name} ${currentIndex + 1}`}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm rounded-full p-2 shadow-lg">
+              <ZoomIn className="w-4 h-4 text-stone-700" />
+            </div>
+          </div>
+
+          {/* Arrows */}
+          {testimonial.images!.length > 1 && (
+            <>
+              <button
+                onClick={prevImage}
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full p-1 transition-colors"
+              >
+                <ChevronLeft className="w-4 h-4" />
+              </button>
+              <button
+                onClick={nextImage}
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full p-1 transition-colors"
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+
+              {/* Dots */}
+              <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+                {testimonial.images!.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={(e) => { e.stopPropagation(); setCurrentIndex(i); }}
+                    className={`w-1.5 h-1.5 rounded-full transition-colors ${
+                      i === currentIndex ? "bg-white" : "bg-white/50"
+                    }`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      )}
+
+      {/* Single Photo */}
+      {!hasBeforeAfter && !hasMultipleImages && testimonial.image && (
+        <div
+          className="relative w-full aspect-[4/3] overflow-hidden bg-stone-100 cursor-pointer group"
+          onClick={() => onImageClick?.([testimonial.image!], 0)}
         >
           <img
             src={testimonial.image}
@@ -49,7 +114,10 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageC
           {testimonial.imageBefore && (
             <div
               className="relative flex-1 aspect-[3/4] overflow-hidden bg-stone-100 cursor-pointer group"
-              onClick={() => onImageClick?.(testimonial.imageBefore!)}
+              onClick={() => {
+                const imgs = [testimonial.imageBefore!, testimonial.imageAfter].filter(Boolean) as string[];
+                onImageClick?.(imgs, 0);
+              }}
             >
               <img
                 src={testimonial.imageBefore}
@@ -71,7 +139,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageC
           {testimonial.imageAfter && (
             <div
               className="relative flex-1 aspect-[3/4] overflow-hidden bg-stone-100 cursor-pointer group border-l-2 border-white"
-              onClick={() => onImageClick?.(testimonial.imageAfter!)}
+              onClick={() => {
+                const imgs = [testimonial.imageBefore, testimonial.imageAfter!].filter(Boolean) as string[];
+                const idx = testimonial.imageBefore ? 1 : 0;
+                onImageClick?.(imgs, idx);
+              }}
             >
               <img
                 src={testimonial.imageAfter}
@@ -130,7 +202,6 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial, onImageC
             <p className="font-serif text-stone-800 font-semibold text-sm">
               {censored}
             </p>
-            <p className="text-stone-400 text-xs">{testimonial.location}</p>
           </div>
         </div>
       </div>

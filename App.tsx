@@ -13,6 +13,8 @@ import {
   Award,
   Sparkles,
   MapPin,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 // Nomor WhatsApp untuk pemesanan (ganti dengan nomor kamu, format: 62xxx tanpa +)
@@ -166,323 +168,266 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: "t1",
     name: "Rina Sari",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Baru 2 minggu pakek Paket Lengkap, kulit badan dah mulai cerah beneran loh. Bekas hitam pun makin ilang. Pokoknye recommended banget dah!",
+    comment: "Ini sih definisi putih nyata, bukan cuma klaim",
     product: "Paket Lengkap",
-    imageBefore: "/images/before1.jpeg",
-    imageAfter: "/images/after1.jpeg",
+    image: "/testimoni/testi1.jpeg",
   },
   {
     id: "t2",
     name: "Dwi Putri",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Lotion malamnya nyaman dipakek, ringan gak lengket. Bangun tidur kulit rasa halus lembap gitu. Suke banget lah pokoknye!",
+    comment: "Rutin 3 mingguan, sekarang keliatan banget bedanya",
     product: "Lotion Malam",
-    imageBefore: "/images/before2.jpeg",
-    imageAfter: "/images/after2.jpeg",
+    image: "/testimoni/testi2.jpeg",
   },
   {
     id: "t3",
     name: "Anisa Rahma",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Toner nye seger banget di kulit, abis mandi langsung pakek rase adem dan lembap. Cocok gile buat kulit yang kering macam aku ni!",
+    comment: "Udah cocok bngt sama las brightening ini pemakaian yg ke 2 paket",
     product: "Toner LAS",
-    imageBefore: "/images/before3.jpeg",
-    imageAfter: "/images/after3.jpeg",
+    imageBefore: "/before/before1.jpeg",
+    imageAfter: "/after/after1.jpeg",
   },
   {
     id: "t4",
     name: "Maya Lestari",
-    location: "Sambas",
     rating: 4,
-    comment:
-      "Lotion siangnya enak dipakek, gak bikin kulit berminyak. Ade SPF 70 lagi jadi gak perlu takut panas matahari dah. Mantap!",
+    comment: "Baru beberapa minggu, udah keliatan bedanya",
     product: "Lotion Siang",
-    imageBefore: "/images/before4.jpeg",
-    imageAfter: "/images/after4.jpeg",
+    image: "/testimoni/testi3.jpeg",
   },
   {
     id: "t5",
     name: "Siti Nurhaliza",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Awalnye ragu, tapi setelah coba Paket Day & Night hasilnye gile sih! Kulit badan makin cerah merata, kawan-kawan pun mulai notice perubahannye.",
+    comment: "Awalnya ragu ternya di kulit badakku juga bisa putih.",
     product: "Paket Day & Night",
-    imageBefore: "/images/before5.jpeg",
-    imageAfter: "/images/after5.jpeg",
+    image: "/testimoni/testi4.jpeg",
   },
   // Testimoni dengan single foto (testi1 - testi28)
   {
     id: "t6",
     name: "Fitri Handayani",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Produk LAS ni beneran bagus, bahan-bahannye alami dan hasilnye nyata. Dah beli ulang 3 kali gak mau ganti skincare lain dah!",
+    comment: " Putihnya dapet, tetap natural suka banget",
     product: "Paket Lengkap",
-    image: "/images/testi.jpeg",
+    imageBefore: "/before/before2.jpeg",
+    imageAfter: "/after/after2.jpeg",
   },
   {
     id: "t7",
     name: "Lina Marlina",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Dah sebulan pakek LAS, kulit badan rase beda banget. Lebih cerah dan halus, gak nyesel dah coba produk ni!",
+    comment: "Rutin pakai lotionnya putih tanpa dosting bebb",
     product: "Paket Lengkap",
-    image: "/testi1.jpeg",
+    image: "/testimoni/testi5.jpeg",
   },
   {
     id: "t8",
     name: "Yuni Astuti",
-    location: "Sambas",
     rating: 5,
     comment:
-      "Toner nye wangi dan seger, gak bikin kulit kering. Dipakek tiap hari pun nyaman. Suke banget!",
+      "Belum terlalu kelihatan hasilnya karna baru pemakaian 4hari tapi kulit jadi halus banget",
     product: "Toner LAS",
-    image: "/testi2.jpeg",
+    image: "/testimoni/testi6.jpeg",
   },
   {
     id: "t9",
     name: "Desi Ratnasari",
-    location: "Pontianak",
-    rating: 4,
+    rating: 5,
     comment:
-      "Lotion malamnya ringan banget, gak berat di kulit. Bangun tidur kulit rase kenyal dan lembap. Top lah!",
+      "Bukan cuman ampuh memutihkan tapi juga bisa menghilangkan bekas luka ampuh banget 😍",
     product: "Lotion Malam",
-    image: "/testi3.jpeg",
+    image: "/testimoni/testi7.jpeg",
   },
   {
     id: "t10",
     name: "Nurul Hidayah",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Pakek Paket Day & Night dah 3 minggu, kulit badan makin putih merata. Kawan-kawan sampai nanya pakek ape. Hehe!",
+    comment: "Teksturnya ringan, gampang banget di blend",
     product: "Paket Day & Night",
-    image: "/testi4.jpeg",
+    image: "/testimoni/testi8.jpeg",
   },
   {
     id: "t11",
     name: "Ratna Dewi",
-    location: "Pontianak",
     rating: 5,
     comment:
-      "Gile sih hasilnye, baru sebulan pakek kulit dah beda jauh. Cerah merata dan bekas hitam makin samar!",
+      "Lotion siang dengan tone up natural, langsung cerah ga bikin kulit abu2 🫰🏻",
     product: "Paket Lengkap",
-    image: "/testi5.jpeg",
+    image: "/testimoni/testi9.jpeg",
   },
   {
     id: "t12",
     name: "Wulan Sari",
-    location: "Sambas",
     rating: 5,
     comment:
-      "Lotion siangnya enak banget, gak bikin kulit berminyak. Kulit rase adem seharian!",
-    product: "Lotion Siang",
-    image: "/testi6.jpeg",
+      "Dulu kulit aku belang dan kusam, setelah rutin pakai lotion malam ini, pelan-pelan warnanya lebih rata dan cerah 🤭",
+    product: "Lotion Malam",
+    image: "/testimoni/testi10.jpeg",
   },
   {
     id: "t13",
     name: "Indah Permata",
-    location: "Pontianak",
     rating: 5,
     comment:
-      "Kawan-kawan pada nanya aku pakek ape, kulit badan dah makin putih dan halus. LAS emang juara dah!",
+      "Udah gak perlu takut lagi siang keluar rumah karna lotion spf nya tinggi jadi aman 😁",
     product: "Paket Lengkap",
-    image: "/testi7.jpeg",
+    image: "/testimoni/testi11.jpeg",
   },
   {
     id: "t14",
     name: "Sri Wahyuni",
-    location: "Sambas",
     rating: 4,
     comment:
-      "Toner nye seger banget, dipakek abis mandi rase nyaman. Kulit badan makin lembap dan gak kering!",
+      "Paket hb malam nigh care , toner nya beneran ampuh mengangkat sel kulit mati😭",
     product: "Toner LAS",
-    image: "/testi8.jpeg",
+    images: ["/slide/slide1.jpeg", "/slide/slides1.jpeg"],
   },
   {
     id: "t15",
     name: "Eka Putri",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Lotion malamnya harum dan ringan, gak lengket. Pagi bangun tidur kulit rase halus dan kenyal. Suke!",
+    comment: "Bagus kulitku jadi cerahan",
     product: "Lotion Malam",
-    image: "/testi9.jpeg",
+    image: "/testimoni/testi12.jpeg",
   },
   {
     id: "t16",
     name: "Nadia Safitri",
-    location: "Sambas",
     rating: 5,
     comment:
-      "Dah coba macam-macam skincare tapi LAS yang paling cocok. Kulit gak iritasi dan makin cerah tiap hari!",
+      "Baru order yg pertama next mau order yang paket lengkapnya deh 😁",
     product: "Paket Day & Night",
-    image: "/testi10.jpeg",
+    image: "/testimoni/testi13.jpeg",
   },
   {
     id: "t17",
     name: "Rini Anggraini",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Paket Lengkap nye emang top, semua produknya cocok di kulit aku. Gak ade yang bikin iritasi. Mantap!",
+    comment: "Bagus kulit jadi putih mulus ga bikin kulit tipis",
     product: "Paket Lengkap",
-    image: "/testi11.jpeg",
+    imageBefore: "/before/before3.jpeg",
+    imageAfter: "/after/after3.jpeg",
   },
   {
     id: "t18",
     name: "Mega Wati",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Baru 3 minggu pakek tapi dah keliatan beda. Kulit badan lebih cerah dan tone nye merata. Gak nyesel dah!",
+    comment: "Baru coba semoga cocok di kulit ku yang susah putih",
     product: "Paket Fresh",
-    image: "/testi12.jpeg",
+    image: "/testimoni/testi15.jpeg",
   },
   {
     id: "t19",
     name: "Ayu Lestari",
-    location: "Pontianak",
     rating: 4,
-    comment:
-      "Lotion siangnya ringan dan ade SPF nye tinggi, jadi gak perlu takut panas matahari lagi. Bagus banget!",
+    comment: "Paket lengkap hasilnya lebih maksimal 😇",
     product: "Lotion Siang",
-    image: "/testi13.jpeg",
+    images: ["/slide/slide2.jpeg", "/slide/slides2.jpeg"],
   },
   {
     id: "t20",
     name: "Diana Putri",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Aku pakek LAS dah 2 bulan, hasilnye beneran nyata. Kulit makin putih bersih, gak kusam lagi dah!",
+    comment: "Before After 2 Mingguan",
     product: "Paket Lengkap",
-    image: "/testi14.jpeg",
+    image: "/testimoni/testi16.jpeg",
   },
   {
     id: "t21",
     name: "Kartini Wulan",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Toner nye bikin kulit rase seger dan bersih abis mandi. Kulit jadi lembap dan gak kering. Cocok banget lah!",
+    comment: "-",
     product: "Toner LAS",
-    image: "/testi15.jpeg",
+    image: "/nocap/nocap1.jpeg",
   },
   {
     id: "t22",
     name: "Novi Hartini",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Suke banget sama lotion malamnya, teksturnye lembut dan cepat meresap. Kulit makin halus tiap pagi!",
+    comment: "-",
     product: "Lotion Malam",
-    image: "/testi16.jpeg",
+    image: "/nocap/nocap2.jpeg",
   },
   {
     id: "t23",
     name: "Putri Amelia",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "LAS ni skincare lokal tapi kualitas nye gak kalah sama yang mahal-mahal. Hasilnye beneran kerasa!",
+    comment: "-",
     product: "Paket Lengkap",
-    image: "/testi17.jpeg",
+    image: "/nocap/nocap3.jpeg",
   },
   {
     id: "t24",
     name: "Sari Mutiara",
-    location: "Sambas",
     rating: 4,
-    comment:
-      "Pakek Paket Day & Night nye rutin, kulit badan jadi lebih kenyal dan lembap. Gak kering lagi dah!",
+    comment: "-",
     product: "Paket Day & Night",
-    image: "/testi18.jpeg",
+    image: "/nocap/nocap4.jpeg",
   },
   {
     id: "t26",
     name: "Lia Susanti",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Dah repurchase 2 kali Paket Fresh nye, toner sama lotion siangnya emang paling cocok buat aku!",
+    comment: "-",
     product: "Paket Fresh",
-    image: "/testi20.jpeg",
+    image: "/nocap/nocap5.jpeg",
   },
   {
     id: "t27",
     name: "Tika Rahayu",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Lotion malamnya juara sih, bangun tidur kulit rase beda. Lebih halus dan cerah, gak kusam lagi!",
+    comment: "Real Putih Bersih",
     product: "Lotion Malam",
-    image: "/testi21.jpeg",
+    image: "/testimoni/testi17.jpeg",
   },
   {
     id: "t28",
     name: "Hesti Wulandari",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Kulit badan aku dulu nye kusam dan gak merata, sekarang dah pakek LAS makin putih dan sehat. Top!",
+    comment: "Cerah seketika dengan Las Brightening 😘",
     product: "Paket Lengkap",
-    image: "/testi22.jpeg",
+    image: "/testimoni/testi18.jpeg",
   },
   {
     id: "t29",
     name: "Rani Oktavia",
-    location: "Pontianak",
     rating: 4,
-    comment:
-      "Toner LAS seger banget, dipakek pagi sama malam kulit badan rase bersih dan lembap. Recommended!",
+    comment: "-",
     product: "Toner LAS",
-    image: "/testi23.jpeg",
+    image: "/nocap/nocap6.jpeg",
   },
   {
     id: "t30",
     name: "Yanti Permata",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Abang aku pun ikut pakek lotion siangnya, kulitnye makin bagus. LAS emang cocok buat semua!",
+    comment: "-",
     product: "Lotion Siang",
-    image: "/testi24.jpeg",
+    image: "/nocap/nocap7.jpeg",
   },
   {
     id: "t31",
     name: "Intan Cahaya",
-    location: "Pontianak",
     rating: 5,
-    comment:
-      "Senang banget ketemu LAS, kulit badan dah berubah banyak. Makin percaya diri pakek baju lengan pendek sekarang!",
+    comment: "-",
     product: "Paket Lengkap",
-    image: "/testi25.jpeg",
+    image: "/nocap/nocap8.jpeg",
   },
   {
     id: "t32",
     name: "Melati Sari",
-    location: "Sambas",
     rating: 5,
-    comment:
-      "Paket Day & Night nye emang combo terbaik, siang terlindungi malam diperbaiki. Kulit makin sehat!",
+    comment: "Baru beberapa hari tapi sudah kelihatan cerah ",
     product: "Paket Day & Night",
-    image: "/testi26.jpeg",
+    imageBefore: "/before/before4.jpeg",
+    imageAfter: "/after/after4.jpeg",
   },
   {
     id: "t33",
     name: "Bunga Citra",
-    location: "Pontianak",
     rating: 5,
     comment:
       "Dah setahun pakek LAS dan gak mau ganti lagi. Kulit badan makin putih sehat, bahan-bahannye pun aman!",
@@ -492,7 +437,6 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: "t34",
     name: "Rosa Damayanti",
-    location: "Sambas",
     rating: 5,
     comment:
       "LAS ni skincare terbaik yang pernah aku coba. Hasilnye cepat kerasa dan gak bikin kulit ketergantungan!",
@@ -505,7 +449,24 @@ const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [lightboxImage, setLightboxImage] = useState<string | null>(null);
+  const [lightbox, setLightbox] = useState<{
+    images: string[];
+    index: number;
+  } | null>(null);
+
+  const openLightbox = (images: string[], index: number) =>
+    setLightbox({ images, index });
+  const closeLightbox = () => setLightbox(null);
+  const lightboxPrev = () =>
+    setLightbox((lb) =>
+      lb
+        ? { ...lb, index: (lb.index - 1 + lb.images.length) % lb.images.length }
+        : lb,
+    );
+  const lightboxNext = () =>
+    setLightbox((lb) =>
+      lb ? { ...lb, index: (lb.index + 1) % lb.images.length } : lb,
+    );
   const [showAllTestimonials, setShowAllTestimonials] = useState(false);
 
   useEffect(() => {
@@ -740,12 +701,14 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {(showAllTestimonials
               ? TESTIMONIALS
-              : TESTIMONIALS.filter((t) => t.imageBefore && t.imageAfter)
+              : TESTIMONIALS.filter(
+                  (t) => t.imageBefore || t.imageAfter || t.image,
+                )
             ).map((testimonial) => (
               <TestimonialCard
                 key={testimonial.id}
                 testimonial={testimonial}
-                onImageClick={setLightboxImage}
+                onImageClick={openLightbox}
               />
             ))}
           </div>
@@ -755,7 +718,9 @@ const App: React.FC = () => {
               onClick={() => setShowAllTestimonials(!showAllTestimonials)}
               className="px-8 py-4 bg-stone-900 text-white rounded-full font-sans uppercase tracking-widest text-sm hover:bg-gold-600 transition-colors shadow-lg hover:shadow-xl"
             >
-              {showAllTestimonials ? "Tampilkan Before & After Saja" : "Lihat Testimoni Lainnya"}
+              {showAllTestimonials
+                ? "Sembunyikan Testimoni"
+                : "Lihat Semua Testimoni"}
             </button>
           </div>
         </div>
@@ -988,23 +953,57 @@ const App: React.FC = () => {
       )}
 
       {/* Lightbox Modal */}
-      {lightboxImage && (
+      {lightbox && (
         <div
           className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4"
-          onClick={() => setLightboxImage(null)}
+          onClick={closeLightbox}
         >
           <button
             className="absolute top-6 right-6 text-white hover:text-gold-400 transition-colors"
-            onClick={() => setLightboxImage(null)}
+            onClick={closeLightbox}
           >
             <X className="w-8 h-8" />
           </button>
           <img
-            src={lightboxImage}
+            src={lightbox.images[lightbox.index]}
             alt="Testimoni"
             className="max-w-full max-h-[90vh] object-contain rounded-2xl shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />
+          {lightbox.images.length > 1 && (
+            <>
+              <button
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white rounded-full p-2 transition-colors"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  lightboxPrev();
+                }}
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+              <button
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white rounded-full p-2 transition-colors"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  lightboxNext();
+                }}
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+                {lightbox.images.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setLightbox((lb) => (lb ? { ...lb, index: i } : lb));
+                    }}
+                    className={`w-2 h-2 rounded-full transition-colors ${i === lightbox.index ? "bg-white" : "bg-white/40"}`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>
