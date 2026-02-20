@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 // Nomor WhatsApp untuk pemesanan (ganti dengan nomor kamu, format: 62xxx tanpa +)
-const WHATSAPP_NUMBER = "6283856454845";
+const WHATSAPP_NUMBER = "6283856177628";
 
 // Data Produk - ganti path image dengan file lokal kamu
 const PRODUCTS: Product[] = [
