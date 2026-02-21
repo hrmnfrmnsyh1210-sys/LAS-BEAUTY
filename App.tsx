@@ -1356,6 +1356,43 @@ const App: React.FC = () => {
         </div>
       </section>
 
+      {/* Sertifikat Section */}
+      <section className="py-24 bg-stone-50 relative">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-gold-600 uppercase tracking-widest text-xs font-bold mb-2 block">
+              Legalitas
+            </span>
+            <h3 className="font-serif text-4xl text-stone-900 mb-4">
+              Sertifikat Kami
+            </h3>
+            <p className="text-stone-500 max-w-lg mx-auto">
+              Produk LAS Brightening telah tersertifikasi dan terjamin kualitasnya.
+            </p>
+            <div className="w-20 h-1 bg-gold-400 mx-auto rounded-full mt-4"></div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden p-6 max-w-md w-full hover:shadow-2xl transition-shadow">
+              <img
+                src="/sertifikat/sertifikat.png"
+                alt="Sertifikat LAS Brightening"
+                className="w-full h-auto object-contain rounded-2xl cursor-pointer"
+                onClick={() => openLightbox(["/sertifikat/sertifikat.png"], 0)}
+              />
+              <div className="mt-4 flex items-center gap-3 justify-center">
+                <div className="p-2 bg-gold-100 rounded-full">
+                  <Award className="w-5 h-5 text-gold-600" />
+                </div>
+                <p className="text-stone-700 text-sm font-semibold">
+                  Produk Bersertifikat Resmi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Area Penjualan / Map Section */}
       <section id="area" className="py-24 bg-white relative">
         <div className="container mx-auto px-6">
